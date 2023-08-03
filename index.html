@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BN4JWJY4HN"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-BN4JWJY4HN');
+		</script>
+
 		<!-- Meta Information -->
-		<title>UX Metrics</title>
-		<meta http-equiv="refresh" content="3" >
-		<meta charset="UTF-8">
-  		<meta name="description" content="Free Web tutorials">
-	  	<meta name="keywords" content="HTML, CSS, JavaScript">
-	  	<meta name="author" content="Tim Broadwater">
-	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The UX Metrics Playbook</title>
+		<!-- <meta http-equiv="refresh" content="3"> -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta http-equiv="cleartype" content="on">
+        
+        <!-- Author, Description, Favicon, and Keywords -->  
+        <meta name="author" content="Tim Broadwater">
+        <meta name="description" content="The UX Metrics Playbook is a handy guide for mapping what UX Metrics are important at different stages in the product lifecycle.">
+        <meta name="keywords" content="UX, UX Metric, UX Metrics, Playbook">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
 	  	<!-- Stylesheet -->
 		<link rel="stylesheet" href="styles.css">
@@ -17,47 +39,48 @@
 
 	</head>
 	<body>
-		<h1><span class="bbwrap"><i class="fa-solid fa-book-open"></i> The UX <span class="lavender-text">M</span><span class="blue-text">e</span><span class="sky-text">t</span><span class="kiwi-text">r</span><span class="minion-text">i</span><span class="saffron-text">c</span><span class="sinopia-text">s</span> Playbook</span> by Carol and Tim</h1>
+		<img class="people" alt="Group of people cheering" src="https://static.vecteezy.com/system/resources/previews/005/105/300/non_2x/group-of-cheerful-young-people-standing-together-waving-and-greeting-happy-team-concept-illustration-free-vector.jpg" /><br>
+		<h1><span class="bbwrap"><i class="fa-solid fa-book-open"></i> The UX <span class="lavender-text">M</span><span class="blue-text">e</span><span class="sky-text">t</span><span class="kiwi-text">r</span><span class="minion-text">i</span><span class="saffron-text">c</span><span class="sinopia-text">s</span> Playbook</span> <span class="nowrap">by Carol and Tim</span></h1>
 		
-		<table>
-		  <col>
-		  <col>
-		  <col>
-		  <col>
-		  <col>
-		  <col>
-		  <col>
-		  <col>
-		  <col>
-		  <col>
+		<div class="table-outter">
+		<table BORDER=0 CELLSPACING=0>
 		  	<thead>
 			  <tr>
 			    <th colspan="1" rowspan="2">Product lifecycle stage<br><i class="fa-solid fa-arrow-down-long"></i></th>
-			    <th colspan="1" rowspan="2"><i class="fa-solid fa-trophy"></i> Goals of measuring UX</th>
+			    <th colspan="1" rowspan="2">Goals of measuring UX</th>
 			    <th colspan="2" rowspan="1">What to measure?</th>
 			    <th colspan="4" rowspan="1">How to measure?</th>
 			    <th colspan="2" rowspan="1"> How to empower decision making?</th>
 			  </tr>
 			  <tr>
-			    <th><strong>Overall Framework / Mechanism</strong><br>
+			    <th class="thead1"><strong>Overall Framework / Mechanism</strong><br>
 			      (UX metrics index/composite score)</th>
-			    <th><strong>UX Metrics</strong> (a set of specific specific quantitative or qualitative measures)</th>
-			    <th>Data source (logs, survey, user testing, 3rd party software, etc.)</th>
-			    <th>Frequency</th>
-			    <th>Data analysis<br>
+			    <th class="thead1"><strong>UX Metrics</strong> (a set of specific specific quantitative or qualitative measures)</th>
+			    <th class="thead2">Data source (logs, survey, user testing, 3rd party software, etc.)</th>
+			    <th class="thead2">Frequency</th>
+			    <th class="thead2">Data analysis<br>
 			      (how the data will be analyzed and reported to stakeholders)</th>
-			    <th>Tool<br>
+			    <th class="thead2">Tool<br>
 			      (specify external, internal)</th>
-			    <th>When to take actions on the metrics</th>
-			    <th>Why it's important</th>
+			    <th class="thead3">When to take actions on the metrics</th>
+			    <th class="thead3">Why it's important</th>
 			  </tr>
 		  	</thead>
-		  <tr>
+
+		  <!-- RESEARCH / PRODUCT DISCOVERY STAGE -->
+		  	
+		  <tr class="sinopia-row">
 		    <td class="sinopia" colspan="1" rowspan="3">RESEARCH / PRODUCT DISCOVERY STAGE <br><i class="fa-solid fa-user"></i>
 		</td>
-		    <td>Identify existing customer data and metrics</td>
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Identify existing customer data and metrics</td>
 		    <td>Customer Needs</td>
-		    <td>Anecdotes, Quotes, Problem Statement, Personas</td>
+		    <td>
+		    	<ul>
+			    	<li>Anecdotes</li>
+			    	<li>Quotes</li>
+			    	<li>Problem Statement</li>
+			    	<li>Personas</li>
+	    		</ul>
 		    <td>Qualitative data</td>
 		    <td>N/A</td>
 		    <td>N/A</td>
@@ -65,10 +88,16 @@
 		    <td>When you are trying to understand your Customers for a non existant, combined, or redesigned service/product.</td>
 		    <td>Product/Service adoption, growth, and success depends on what customer want, is useful, and usable.</td>
 		  </tr>
-		  <tr>
-		    <td><em>Understand the product-market fit</em></td>
+		  <tr class="sinopia-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Understand the product-market fit</td>
 		    <td>Product Marketing Metrics</td>
-		    <td>Metrics from other products/combine dprodcutsMetrics below for spaceRequirements</td>
+		    <td>
+		    	<ul>
+		    		<li>Metrics from other products/combined prodcuts</li>
+		    		<li>Metrics below for space</li>
+					<li>Requirements</li>
+				</ul>
+			</td>
 		    <td>Quantitative data</td>
 		    <td>N/A</td>
 		    <td>N/A</td>
@@ -76,8 +105,8 @@
 		    <td>When you are trying to understand the product landscape for a new, merged, or redesigned service/product.</td>
 		    <td>Any understanding of a product landscape from a quantitative metrics perspective will better dictate product requirements.</td>
 		  </tr>
-		  <tr>
-		    <td>Internal validation</td>
+		  <tr class="sinopia-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Internal validation</td>
 		    <td></td>
 		    <td></td>
 		    <td></td>
@@ -87,55 +116,114 @@
 		    <td></td>
 		    <td></td>
 		  </tr>
+
+		  <!-- DEVELOPMENT STAGE -->
+
 		  <tr class="lavender-row">
 		    <td class="lavender" colspan="1" rowspan="5">DEVELOPMENT STAGE <br><i class="fa-solid fa-code"></i></td>
-		    <td><strong>Identify users</strong></td>
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Identify users</td>
 		    <td>User Analytics</td>
-		    <td>Unique vistorsVisitor SessionsMonthly Active Users (MAU)User demographics</td>
+		    <td>
+		    	<ul>
+					<li>Unique vistors</li>
+					<li>Visitor Sessions</li>
+					<li>Monthly Active Users (MAU)</li>
+					<li>User demographics</li>
+				</ul>
 		    <td>Logs</td>
 		    <td>Every time customer access</td>
 		    <td>Create an Isengard account to query CloudWatch data, or get access to data through 3rd party services/teams</td>
-		    <td>Access logsCloudWatchKibana</td>
-		    <td>When you want to talk to cuastomers, and when you want to see if customers are using your product/service.</td>
-		    <td>Understanding your product/service's daily, weekly, monmthly, or even yearly customers helps you see actual usage over time. Also knowing customers use the most helps you identify power users.</td>
+		    <td>
+		    	<ul>
+					<li>Access logs</li>
+					<li>CloudWatch</li>
+					<li>Kibana</li>
+				</ul>
+			</td>
+		    <td>When you want to talk to cuastomers, and when you want to see if customers are using your product / service.</td>
+		    <td>Understanding your product / service's daily, weekly, monmthly, or even yearly customers helps you see actual usage over time. Also knowing customers use the most helps you identify power users.</td>
 		  </tr>
 		  <tr class="lavender-row">
-		    <td></td>
+		    <td class="lavender"></td>
 		    <td>Error Logs</td>
-		    <td>error IDerror labelerror log entryerror record template</td>
+		    <td>
+		    	<ul>
+					<li>error ID</li>
+					<li>error label</li>
+					<li>error log entry</li>
+					<li>error record template</li>
+				</ul>
+			</td>
 		    <td>Logs</td>
 		    <td>Every time error is triggered</td>
 		    <td>SDE visualize the errors through Kibana, LoudWatch, or other tools.</td>
-		    <td>CloudWatchOther</td>
+		    <td>Other</td>
 		    <td>When you are encountering mutiple errors.</td>
 		    <td>Bugs need to be idetified an fixed as to not impeede the customer experience with your product/service.</td>
 		  </tr>
 		  <tr class="lavender-row">
-		    <td></td>
+		    <td class="lavender"></td>
 		    <td>System/Page Performance</td>
-		    <td>Time-to-Load (T2L)initialLoad (ms)pageReady (ms)loadFinished (ms)uptimeerror rate</td>
+		    <td>
+		    	<ul>
+
+					<li>Time-to-Load (T2L)</li>
+					<li>initialLoad (ms)</li>
+					<li>pageReady (ms)</li>
+					<li>loadFinished (ms)</li>
+					<li>uptimeerror rate</li>
+				</ul>
+			</td>
 		    <td>Logs</td>
 		    <td>Manually set by team to dynamically occur over time</td>
 		    <td>SDE visualize the performance through LightHouse or other tools.</td>
-		    <td>Google LighthouseAWS User Insights Tool?Automated TestsBrowser Dev Tools</td>
+		    <td>
+		    	<ul>
+					<li>Google Lighthouse</li>
+					<li>AWS User Insights Tool?</li>
+					<li>Automated Tests</li>
+					<li>Browser Dev Tools</li>
+				</ul>
+			</td>
 		    <td>When your loadtime is over 6 seconds.</td>
 		    <td>Customers will abandon your product/service if another faster one exists.</td>
 		  </tr>
 		  <tr class="lavender-row">
-		    <td>Test design / prototypes with customers</td>
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Test design / prototypes with customers</td>
 		    <td>Design Testing</td>
-		    <td>Customer testsStoryboardsInteractive prototypesPrototype / Wireframe Tests</td>
+		    <td>
+		    	<ul>
+		    		<li>Customer tests</li>
+	    			<li>Storyboards</li>
+	    			<li>Interactive prototypes</li>
+	    			<li>Prototype / Wireframe Tests</li>
+    			</ul>
+    		</td>
 		    <td>User testing</td>
 		    <td>As needed</td>
 		    <td>User insights</td>
-		    <td>AxureBalsamiqFigmaOther</td>
+		    <td>
+		    	<ul>
+		    		<li>Axure</li>
+		    		<li>Balsamiq</li>
+		    		<li>Figma</li>
+		    		<li>Other</li>
+	    		</ul>
+			</td>
 		    <td>When you need to conduct formative user testing for new product / features.</td>
 		    <td>To test basic interaction and content strategy through a design.</td>
 		  </tr>
-		  <tr class="lavender-row">
-		    <td></td>
+		  <tr class="lavender-row last-row">
+		    <td class="lavender"></td>
 		    <td>Design Research</td>
-		    <td>Customer shadowingUser interviewsSME focus groupsCompetitive benchmarking</td>
+		    <td>
+		    	<ul>
+					<li>Customer shadowing</li>
+					<li>User interviews</li>
+					<li>SME focus groups</li>
+					<li>Competitive benchmarking</li>
+				</ul>
+			</td>
 		    <td>User research</td>
 		    <td>As needed</td>
 		    <td>Research doc</td>
@@ -143,115 +231,269 @@
 		    <td>When first trying to understand the space for you product / service and its cutomers.</td>
 		    <td>Reduce churn, development hours and costs.</td>
 		  </tr>
-		  <tr>
+
+		  <!-- BETA / TESTING STAGE -->
+
+		  <tr class="blue-row">
 		    <td class="blue" colspan="1" rowspan="3">BETA / TESTING STAGE<br><i class="fa-solid fa-flask-vial"></i></td>
-		    <td>Identify usability issues / pain points</td>
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Identify usability issues / pain points</td>
 		    <td>System Usability Scale (SUS)</td>
-		    <td>Frequency of Use System ComplexityEase of UseTechnical SupportWell IntegratedInconsistencyLearn System QuicklyVery CumbersomeSystem ConfidenceNeed to be an Expert</td>
+		    <td>
+		    	<ul>
+					<li>Frequency of Use </li>
+					<li>System Complexity</li>
+					<li>Ease of Use</li>
+					<li>Technical Support</li>
+					<li>Well Integrated</li>
+					<li>Inconsistency</li>
+					<li>Learn System Quickly</li>
+					<li>Very Cumbersome</li>
+					<li>System Confidence</li>
+					<li>Need to be an Expert</li>
+				</ul>
+			</td>
 		    <td>User survey</td>
 		    <td>Measure SUS at least once during each major iteration or release of the product, and also at key milestones such as after significant design changes or major feature additions</td>
 		    <td>Data will be analyzed to calculate 10 UX metric scores which indicate the overall usability of the product.</td>
-		    <td>Qualtrics (external and internal)FieldSense</td>
+		    <td>Qualtrics</td>
 		    <td>Inventigate when SUS scroe falls below the industry benchmark or if it shows a significant decrease over time.<br>
 		      <br>
 		      Additionally, it's important to identify specific areas of improvement based on the individual SUS questions to make targeted improvements.</td>
 		    <td>SUS is especially useful when conducting comparative studies or benchmarking the usability of a product against industry standards.</td>
 		  </tr>
-		  <tr>
-		    <td>Collect feedback from early adopters / hear voice of the customer </td>
+		  <tr class="blue-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Collect feedback from early adopters / hear voice of the customer </td>
 		    <td>Qualitative Data</td>
-		    <td>Anecdotes, User Insightsm, Questions</td>
-		    <td>Focus GroupUser InterviewSurvey</td>
+		    <td>
+		    	<ul>
+		    		<li>Anecdotes</li>
+		    		<li>User Insightsm</li>
+		    		<li>Questions</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+		    		<li>Focus Group</li>
+		    		<li>User Interview</li>
+		    		<li>Survey</li>
+		    	</ul>
+		    </td>
 		    <td>As needed</td>
 		    <td>Qualitative data would be captured manually or through audio/video/text recording.</td>
-		    <td>ChimeUserTestingFieldSenseQualtrics</td>
+		    <td>
+		    	<ul>
+		    		<li>UserTesting</li>
+		    		<li>Qualtrics</li>
+		    	</ul>
+		    </td>
 		    <td>Qualitative data from customers provides context to anlaytics and self-reported data. Qualitative data is best used to get formative user data from smaller audiences for new fetures, customer sentiments, etc.</td>
 		    <td>When there is low hanging fruit in regards to LOE from SDE, that correlates to improving product/service for multiple users.</td>
 		  </tr>
-		  <tr>
-		    <td>Identify best solutions</td>
+		  <tr class="blue-row last-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Identify best solutions</td>
 		    <td>Quantitative Data</td>
-		    <td>StatisticsTop-Task RankingRatings</td>
-		    <td>SurveyLikertRanking</td>
+		    <td>
+		    	<ul>
+		    		<li>Statistics</li>
+		    		<li>Top-Task Ranking</li>
+		    		<li>Ratings</li>
+		    	</ul>
+	    	</td>
+		    <td>
+		    	<ul>
+		    		<li>Survey</li>
+		    		<li>Likert</li>
+		    		<li>Ranking</li>
+		    	</ul>
+	    	</td>
 		    <td>As needed</td>
 		    <td>Quantitative data would be captured dynamically through a customer interept mechanism, survey, or feedback system.</td>
-		    <td>AperetureFieldSenseQualtricsOther</td>
+		    <td>
+		    	<ul>
+		    		<li>Qualtrics</li>
+		    		<li>Other</li>
+		    	</ul>
+	    	</td>
 		    <td>Quantitative data is best applied to summative user data, wherin you want to confirm something froma. larger audience.</td>
 		    <td>Popular opinion, consensus, and overall statistics are beneficial froma. bird's eye view.</td>
 		  </tr>
-		  <tr>
+
+		  <!-- INTRODUCTION STAGE -->
+
+		  <tr class="sky-row">
 		    <td class="sky" colspan="1" rowspan="16">INTRODUCTION STAGE<br><i class="fa-regular fa-handshake"></i></td>
-		    <td>Benchmark product usability</td>
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Benchmark product usability</td>
 		    <td>System Usability Scale (SUS)</td>
-		    <td>Frequency of Use System ComplexityEase of UseTechnical SupportWell IntegratedInconsistencyLearn System QuicklyVery CumbersomeSystem ConfidenceNeed to be an Expert</td>
+		    <td>
+		    	<ul>
+					<li>Frequency of Use </li>
+					<li>System Complexity</li>
+					<li>Ease of Use</li>
+					<li>Technical Support</li>
+					<li>Well Integrated</li>
+					<li>Inconsistency</li>
+					<li>Learn System Quickly</li>
+					<li>Very Cumbersome</li>
+					<li>System Confidence</li>
+					<li>Need to be an Expert</li>
+				</ul>
+		    </td>
 		    <td>User survey</td>
 		    <td>Measure SUS at least once during each major iteration or release of the product, and also at key milestones such as after significant design changes or major feature additions</td>
 		    <td>Data will be analyzed to calculate 10 UX metric scores which indicate the overall usability of the product.</td>
-		    <td>Qualtrics (external and internal)FieldSense</td>
+		    <td>Qualtrics</td>
 		    <td>Inventigate when SUS scroe falls below the industry benchmark or if it shows a significant decrease over time.<br>
 		      <br>
 		      Additionally, it's important to identify specific areas of improvement based on the individual SUS questions to make targeted improvements.</td>
 		    <td>SUS is especially useful when conducting comparative studies or benchmarking the usability of a product against industry standards.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="sky-row">
+		    <td class="sky"></td>
 		    <td>Single Ease Question (SEQ)</td>
-		    <td>ComplexityUsability </td>
-		    <td>LogsDatabase</td>
+		    <td>
+		    	<ul>
+					<li>Complexity</li>
+					<li>Usability </li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+		    	</ul>
+		    </td>
 		    <td>Can be tracked dynamically on completion of a specific task, or manually in a customer test.</td>
 		    <td>Overall ratings or score as a mean.</td>
-		    <td>AperatureBuilt into Product/ServiceOther</td>
+		    <td>
+		    	<ul>
+					<li>Built into Product / Service</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>When ratings or mean for measured task are concerning.  Higher usability scores indicate that users can complete tasks more easily, while lower scores indicate usability issues that need to be addressed.</td>
 		    <td>Tasks that are most important for customers to perform should use SEQ as completion action or intercept.</td>
 		  </tr>
-		  <tr>
-		    <td>Track user engagement</td>
+		  <tr class="sky-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Track user engagement</td>
 		    <td>Track User Behavior</td>
-		    <td>Task completion rate (Darkroom funnel reports)Task completion timeInteraction cost (# of steps)User input error rateTask success rateAbandon rateError rate (user caused)</td>
-		    <td>Database3rd party software</td>
+		    <td>
+		    	<ul>
+					<li>Task completion rate (Darkroom funnel reports)</li>
+					<li>Task completion time</li>
+					<li>Interaction cost (# of steps)</li>
+					<li>User input error rate</li>
+					<li>Task success rate</li>
+					<li>Abandon rate</li>
+					<li>Error rate (user caused)</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Database</li>
+					<li>3rd party software</li>
+		    	</ul>
+		    </td>
 		    <td>Should track or add tracking tag to record everything a user can interact with or causes.</td>
 		    <td>Data is typically visualized in the 3rd party tool itself via a heatmap, layovers, data visualizations, and workflows.</td>
-		    <td>AWS Console MezzaninePanoramaAdobe Test and TargetGoogle AnalyticsReactTrackOther</td>
+		    <td>
+		    	<ul>
+					<li>AWS Console Mezzanine</li>
+					<li>Panorama</li>
+					<li>Adobe Test and Target</li>
+					<li>Google Analytics</li>
+					<li>ReactTrack</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>When customer behavior is concerning, worth noting, or you see trends in workflows, charts, or heatmaps.</td>
 		    <td>It is important to know what is being used, what's popular, what isn't being used, and when a customer triggers an error.</td>
 		  </tr>
-		  <tr>
-		    <td>Track product adoption</td>
+		  <tr class="sky-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Track product adoption</td>
 		    <td>Adoption Rates</td>
-		    <td>Activation rateOnboarding completion rateFeature usageDAU, WAU, MAUConversion Rate</td>
-		    <td>DatabaseOther</td>
+		    <td>
+		    	<ul>
+					<li>Activation rate</li>
+					<li>Onboarding completion rate</li>
+					<li>Feature usage</li>
+					<li>DAU, WAU, MAU</li>
+					<li>Conversion Rate</li>
+		    	</ul>
+			</td>
+		    <td>
+		    	<ul>	
+					<li>Database</li>
+					<li>Other</li>
+		    	</ul>
+			</td>
 		    <td>Every time customer access a apge, performs an activation action, or percentage of onboarding completeion.</td>
 		    <td>Visualize the performance through other tools.</td>
-		    <td>CloudWatch DashboardsKibanaOther</td>
+		    <td>
+		    	<ul>	
+					<li>CloudWatch </li>
+					<li>Dashboards</li>
+					<li>Kibana</li>
+					<li>Other</li>
+		    	</ul>
+			</td>
 		    <td>When rates decline.</td>
 		    <td>To grow a product/service over time you have to increase users, and uderstand what users need in your UI.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="sky-row">
+		    <td class="sky"></td>
 		    <td>Technology Acceptance Model (TAM)</td>
-		    <td>Perceived usefulnessPerceived ease of use</td>
-		    <td>LogsDatabase</td>
+		    <td>
+		    	<ul>
+					<li>Perceived usefulness</li>
+					<li>Perceived ease of use</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+		    	</ul>
+		    </td>
 		    <td>This model can be used when considering rolling out a new piece of technology to the whole business, after an initial trial.</td>
 		    <td>Rating answers on a scale, you can build a score for each value, and then use this to evaluate your customer's overall attitude towards the technology.</td>
-		    <td>AperatureBuilt into Product/ServiceOther</td>
+		    <td>
+		    	<ul>
+					<li>BaseCamp</li>
+					<li>Built into Product/Service</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>When you need to understand the perception of technology usefulness from the customer in performing the task and perceived ease of its use.</td>
 		    <td>To understand the perceived usefulness and perceived ease of use by cutomers for your product/service.</td>
 		  </tr>
-		  <tr>
-		    <td>Measure user satisfaction</td>
+		  <tr class="sky-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Measure user satisfaction</td>
 		    <td>PURE</td>
 		    <td>Scores for each fundamental task that can be accomplished with that product</td>
 		    <td>Survey</td>
 		    <td>As needed</td>
 		    <td>The PURE score for a product is the sum of the scores for each fundamental task that can be accomplished with that product.</td>
-		    <td>FIeldSenseUserTestingQualtricsOther</td>
+		    <td>
+		    	<ul>
+					<li>UserTesting</li>
+					<li>Qualtrics</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>The PURE method quantifies how difficult a product is to use and provides qualitative insights into how to fix it, both without costing a lot of time or money.</td>
 		    <td>A metric you can track over time to evaluate all the diffferent parts of your application, as well as an overall score.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="sky-row">
+		    <td class="sky"></td>
 		    <td>Standardized User Experience Percentile Rank Questionnaire (SUPR-Q)</td>
-		    <td>UsabilityCredibilityLoyaltyAppearance</td>
+		    <td>
+		    	<ul>
+					<li>Usability</li>
+					<li>Credibility</li>
+					<li>Loyalty</li>
+					<li>Appearance</li>
+		    	</ul>
+		    </td>
 		    <td>Survey</td>
 		    <td>As needed</td>
 		    <td>To score your SUPR-Q results, simply average all of your scores, excluding the 'likely to recommend' item.</td>
@@ -259,76 +501,166 @@
 		    <td>The scores are averaged and assigned a valued between 0-100, and then composted into your overall score. An important factor about your score: 50 is average, so minitor dropping below that threshold.</td>
 		    <td>To understand the quality of the user experience: for your customers.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="sky-row">
+		    <td class="sky"></td>
 		    <td>UMUX</td>
 		    <td>General usability of a system</td>
-		    <td>LogsDatabase</td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+		    	</ul>
+		    </td>
 		    <td>Can be tracked dynamically on completion of a specific task, or manually in a customer test.</td>
 		    <td>Overall ratings or score as a mean.</td>
-		    <td>AperatureBuilt into Product/ServiceOther</td>
+		    <td>
+		    	<ul>
+					<li>BaseCamp</li>
+					<li>Built into Product/Service</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>To use after usability testing or for evaluating usability throughout product/service use due to how compact they are.</td>
 		    <td>Whereas SUS assesses perceived usability and learnability, UMUX targets usability by assessing effectiveness, efficiency, and satisfaction.</td>
 		  </tr>
-		  <tr>
-		    <td>Understand user behavior</td>
+		  <tr class="sky-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Understand user behavior</td>
 		    <td>Behavior / Engagement</td>
-		    <td>Page viewsCustomer flowsHeat MapsTraffic sourceAbandon ratesNew Vs. Return customers</td>
-		    <td>LogsDatabase</td>
+		    <td>
+		    	<ul>
+					<li>Page views</li>
+					<li>Customer flowsH</li>
+					<li>eat Maps</li>
+					<li>Traffic source</li>
+					<li>Abandon rates</li>
+					<li>New Vs. Return customers</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+		    	</ul>
+		    </td>
 		    <td>Every time customer access a page or clicks/interacts with somethingin the UI.</td>
 		    <td>Data is typically visualized in the 3rd party tool itself via a heatmap, layovers, data visualizations, and workflows.</td>
-		    <td>AWS Console MezzaninePanoramaGoogle AnalyticsOther</td>
+		    <td>
+		    	<ul>
+					<li>Google Analytics</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>When customer behavior is concerning, worth noting, or you see trends in workflows, charts, or heatmaps.</td>
 		    <td>It is important to know what is being used, what's popular, what isn't being used, and when a customer triggers an error.</td>
 		  </tr>
-		  <tr>
-		    <td>Strive towards product-market fit</td>
+		  <tr class="sky-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Strive towards product-market fit</td>
 		    <td>Click Through Rate (CTR)</td>
-		    <td>Total Clicks on AdsTotal Impressions</td>
+		    <td>
+		    	<ul>
+					<li>Total Clicks on Ads</li>
+					<li>Total Impressions</li>
+		    	</ul>
+		    </td>
 		    <td>3rd party software</td>
 		    <td>As customer clicks on mechanism</td>
 		    <td>Click-through rate is a ratio of how often people see your product listing ads by clicking it. Click-through rate can also be used to measure how your keywords are performing.</td>
-		    <td>Google CTRAdvanced Web Ranking</td>
+		    <td>
+		    	<ul>
+					<li>Google CTR</li>
+					<li>Advanced Web Ranking</li>
+		    	</ul>
+		    </td>
 		    <td>When you market fit is not correct, or you don't understand your customer or their need.</td>
 		    <td>(Total Clicks on Ads) / (Total Impressions) = Click Though Rate</td>
 		  </tr>
-		  <tr>
-		    <td>Measure design effectiveness</td>
+		  <tr class="sky-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Measure design effectiveness</td>
 		    <td>Information Architecture</td>
-		    <td>DendrogramsTree Test</td>
+		    <td>
+		    	<ul>
+					<li>Dendrograms</li>
+					<li>Tree Test</li>
+		    	</ul>
+		    </td>
 		    <td>3rd party software</td>
 		    <td>As needed</td>
 		    <td>Dendrograms are used to measure information architecture from tree tests or card sorts, and UI text should be at a 7th grade reading level.</td>
-		    <td>XsortWord</td>
+		    <td>
+		    	<ul>
+					<li>Xsort</li>
+					<li>Word</li>
+		    	</ul>
+		    </td>
 		    <td>When you reading comprehension is too high, or your information architecture doesn't map to your customer's mental model.</td>
 		    <td>Customers mental models should mirror your navigation, and they need to quickly read text content.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="sky-row">
+		    <td class="sky"></td>
 		    <td>Reading Comprehension</td>
-		    <td>Grade Level ScoreReadability</td>
+		    <td>
+		    	<ul>
+					<li>Grade Level Score</li>
+					<li>Readability</li>
+		    	</ul>
+		    </td>
 		    <td>MS Word</td>
-		    <td>When adding new pages, content, or textAs needed for pages/parts</td>
+		    <td>
+		    	<ul>
+					<li>When adding new pages, content, or text</li>
+					<li>As needed for pages/parts</li>
+		    	</ul>
+		    </td>
 		    <td>Reading level per page / or element.</td>
-		    <td>MS WordUX Writer</td>
+		    <td>
+		    	<ul>
+					<li>MS Word</li>
+					<li>UX Writer</li>
+		    	</ul>
+		    </td>
 		    <td>When your text is over a 7th grade reading level (which is appropriate for web skimming, reading, and comprehension.</td>
 		    <td>Customers need to be able to read and understand your product/service.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="sky-row">
+		    <td class="sky"></td>
 		    <td>Task Success</td>
-		    <td>Task Success RateTask Completion TimeTask Error Rate</td>
-		    <td>Database3rd party software</td>
+		    <td>
+		    	<ul>
+					<li>Task Success Rate</li>
+					<li>Task Completion Time</li>
+					<li>Task Error Rate</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Database</li>
+					<li>3rd party software</li>
+		    	</ul>
+		    </td>
 		    <td>When testing new products or features.</td>
 		    <td>Percentages of completion, error, and success rates.</td>
-		    <td>TechSmith MoraeUAT TestingOther</td>
+		    <td>
+		    	<ul>
+					<li>TechSmith Morae</li>
+					<li>UAT Testing</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>Conducted to determine if the requirements of a specification or contract are met.</td>
 		    <td>Users need to be able to complete requirements and functions in the product/service.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="sky-row">
+		    <td class="sky"></td>
 		    <td>Website Analysis and MeasureMent (WAMMI)</td>
-		    <td>Attractiveness, Controllability, Efficiency, Helpfulness, Learnability.</td>
+		    <td>
+		    	<ul>
+					<li>Attractiveness</li>
+					<li>Controllability</li>
+					<li>Efficiency</li>
+					<li>Helpfulness</li>
+					<li>Learnability</li>
+		    	</ul>
+		    </td>
 		    <td>SurveyDatabase3rd party software</td>
 		    <td>As needed</td>
 		    <td>Your product/service is also given an overall Global Usability Score (GUS)</td>
@@ -336,21 +668,44 @@
 		    <td>Utilize when you want to measure and iImprove UX.</td>
 		    <td>WAMMI measures user-satisfaction by asking customers to compare their expectations with what they actually experience..</td>
 		  </tr>
-		  <tr>
-		    <td>Track product performance</td>
+		  <tr class="sky-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Track product performance</td>
 		    <td>UI Errors</td>
-		    <td>Accessibility errorsConsole errorsDevice Browser CompatabilityDevice Browser Responsivity</td>
+		    <td>
+		    	<ul>
+					<li>Accessibility errors</li>
+					<li>Console errors</li>
+					<li>Device Browser Compatability</li>
+					<li>Device Browser Responsivity</li>
+		    	</ul>
+		    </td>
 		    <td>3rd party software</td>
 		    <td>As customer loads UI in browser</td>
 		    <td>Data will generate a report of accessibility complaince, console errors. Device/Browser compatability would be tested manually.</td>
-		    <td>WaveGoogle LighthouseCompliance SheriffOthers</td>
+		    <td>
+		    	<ul>
+					<li>Wave</li>
+					<li>Google Lighthouse</li>
+					<li>Compliance Sheriff</li>
+					<li>Others</li>
+		    	</ul>
+		    </td>
 		    <td>When you are seeing errors on these, or your not being inclusive to accessibility issues.</td>
 		    <td>An estimated 48.9 million people, or 19.4% of the non-institutionalized civilians, have a disability.</td>
 		  </tr>
-		  <tr>
-		    <td><strong>Overall CX quality </strong></td>
+		  <tr class="sky-row last-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Overall CX quality</td>
 		    <td>CX index scroe</td>
-		    <td></td>
+		    <td>
+		    	<ul>
+		    		<li>Effectiveness</li>
+		    		<li>Ease</li>
+		    		<li>Emotion</li>
+		    		<li>Retention</li>
+		    		<li>Enrichment</li>
+		    		<li>Advocacy</li>
+		    	</ul>
+		    </td>
 		    <td></td>
 		    <td></td>
 		    <td></td>
@@ -358,123 +713,254 @@
 		    <td></td>
 		    <td></td>
 		  </tr>
-		  <tr>
+
+		  <!-- MATURITY STAGE -->
+
+		  <tr class="kiwi-row">
 		    <td class="kiwi" colspan="1" rowspan="6">GROWTH STAGE<br><i class="fa-solid fa-seedling"></i></td>
-		    <td>Measure user satisfaction over time</td>
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Measure user satisfaction over time</td>
 		    <td>Customer Satisfaction Score (CSAT)</td>
 		    <td>Customer happiness with a product/service</td>
-		    <td>LogsDatabase</td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+		    	</ul>
+		    </td>
 		    <td>Can be tracked dynamically on completion of a specific task, or manually in a customer test.</td>
 		    <td>Overall ratings or score as a mean.</td>
-		    <td>AperatureBuilt into Product/ServiceOther</td>
+		    <td>
+		    	<ul>
+					<li>BaseCamp</li>
+					<li>Built into Product/Service</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>If your score is moving from lower to higher, you&rsquo;re doing something right. Also, the vice versa is true.</td>
 		    <td>CSAT is a &ldquo;right here, right now&rdquo; metric that relates to a specific experience rather than an ongoing customer relationship. </td>
 		  </tr>
-		  <tr>
-		    <td>Identify opportunities for expanding the user base</td>
+		  <tr class="kiwi-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Identify opportunities for expanding the user base</td>
 		    <td>Demographics</td>
-		    <td>Traffics sourcesUser acquisitionUser demographics</td>
-		    <td>LogsDatabase3rd party software</td>
+		    <td>
+		    	<ul>
+					<li>Traffics sources</li>
+					<li>User acquisition</li>
+					<li>User demographics</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+					<li>3rd party software</li>
+		    	</ul>
+		    </td>
 		    <td>As customer loads UI in browser</td>
-		    <td>Customer flowsHeat MapsTraffic sourceAbandon ratesNew Vs. Return customers</td>
-		    <td>Google AnalyticsOther</td>
+		    <td>
+		    	<ul>
+					<li>Customer flows</li>
+					<li>Heat Maps</li>
+					<li>Traffic source</li>
+					<li>Abandon rates</li>
+					<li>New Vs. Return customers</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Google Analytics</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>When you are seeing errors, insights, or trends</td>
 		    <td>It's important know where users are coming from to your product/service, and to get any data about your customers.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="kiwi-row">
+		    <td class="kiwi"></td>
 		    <td>True Intent</td>
 		    <td>Understand the intended goals of <em>actual</em> visitors </td>
-		    <td>LogsDatabase3rd party software</td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+					<li>3rd party software</li>
+		    	</ul>
+		    </td>
 		    <td>As a customer is completing an action, there are interecpeted, followed, and surveyed</td>
 		    <td>Qualitative data and open-ended comments are mapped to a workflow.</td>
-		    <td>3rd party softwareOther</td>
+		    <td>
+		    	<ul>
+					<li>3rd party software</li>
+					<li>Other</li>
+		    	</ul>
+		    </td>
 		    <td>When you want to discover what a customer is actually doing on your website, or if/when they are encountering problems.</td>
 		    <td>Once you start uncovering where problems are coming from by looking at the open-ended comments, you can conduct follow-up usability tests to dig into the origin of these problems.</td>
 		  </tr>
-		  <tr>
-		    <td>Measure user retention</td>
+		  <tr class="kiwi-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Measure user retention</td>
 		    <td>Retention Engagement</td>
-		    <td>% returning users% of users continue to use products over timeChurn rate</td>
-		    <td>LogsDatabase3rd party software</td>
+		    <td>
+		    	<ul>
+					<li>% returning users</li>
+					<li>% of users continue to use products over time</li>
+					<li>Churn rate</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+					<li>3rd party software</li>
+		    	</ul>
+		    </td>
 		    <td>As needed</td>
 		    <td>To calculate the user retention rate, you need to subtract the number of acquired users throughout a period from the number of users at the end of the period and then divide it by the number of users at the beginning of the period.</td>
 		    <td>Various</td>
 		    <td>When your numbers start to go into the negative, or the positive..</td>
 		    <td>This metric can tell you whether your retention strategy is working or not.</td>
 		  </tr>
-		  <tr>
-		    <td>Custom UX Metrics</td>
+		  <tr class="kiwi-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Custom UX Metrics</td>
 		    <td>TOME</td>
-		    <td>ThemeOKRsMetricsEvents</td>
+		    <td>
+		    	<ul>
+					<li>Theme</li>
+					<li>OKRs</li>
+					<li>Metrics</li>
+					<li>Events</li>
+		    	</ul>
+		    </td>
 		    <td>Various</td>
-		    <td>As neededMonthly</td>
+		    <td>
+		    	<ul>
+					<li>As needed</li>
+					<li>Monthly</li>
+		    	</ul>
+		    </td>
 		    <td>Custom UX Metrics are tracked against the goals they are attached to or baselines to denote improvement or decline.</td>
 		    <td>Multiple</td>
 		    <td>With Custom UX metrics actions are based on specific goals that are defined by team.</td>
 		    <td>To develop a scaleable UX Metrics framework that is specific to your product/service.</td>
 		  </tr>
-		  <tr>
-		    <td></td>
+		  <tr class="kiwi-row last-row">
+		    <td class="kiwi"></td>
 		    <td>HEART</td>
-		    <td>HappinessEngagementAdoptionRetention</td>
+		    <td>
+		    	<ul>
+					<li>HappinessE</li>
+					<li>ngagement</li>
+					<li>Adoption</li>
+					<li>Retention</li>
+		    	</ul>
+		    </td>
 		    <td>Various</td>
-		    <td>As neededMonthly</td>
-		    <td>❤️ Google&rsquo;s HEART Framework for Measuring UX</td>
+		    <td>
+		    	<ul>
+					<li>As needed</li>
+					<li>Monthly</li>
+		    	</ul>
+		    </td>
+		    <td>Google&rsquo;s HEART Framework for Measuring UX</td>
 		    <td>Multiple</td>
 		    <td>With Custom UX metrics actions are based on specific goals that are defined by team.</td>
 		    <td>To develop a scaleable UX Metrics framework that is specific to your product/service.</td>
 		  </tr>
-		  <tr>
+
+		  <!-- MATURITY STAGE -->
+
+		  <tr class="minion-row">
 		    <td class="minion" colspan="1" rowspan="3">MATURITY STAGE<br><i class="fa-solid fa-medal"></i></td>
-		    <td>Maintain user satisfaction</td>
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Maintain user satisfaction</td>
 		    <td>Net Promoter Score</td>
 		    <td>Loyalty of a company's customer base with a score from -100 to +100</td>
-		    <td>LogsDatabase3rd party software</td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+					<li>3rd party software</li>
+		    	</ul>
+		    </td>
 		    <td>The Net Promoter Score (NPS) measures the loyalty of a company's customer base with a score from -100 to +100.</td>
 		    <td>Comes from customers answering the question "How likely are you to recommend this company to a friend or colleague?"</td>
 		    <td>Various</td>
 		    <td>NPS is a reliable metric to link improvements in customer loyalty to business.</td>
 		    <td>To be aware of potential customer abandonment.</td>
 		  </tr>
-		  <tr>
-		    <td>Maintain user retention</td>
+		  <tr class="minion-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Maintain user retention</td>
 		    <td>Retention Rate</td>
 		    <td>User retention rate is the percentage of users who have stayed with you over a given period of time. </td>
-		    <td>LogsDatabase3rd party software</td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+					<li>3rd party software</li>
+		    	</ul>
+		    </td>
 		    <td>As needed</td>
 		    <td>To calculate the user retention rate, you need to subtract the number of acquired users throughout a period from the number of users at the end of the period and then divide it by the number of users at the beginning of the period.</td>
 		    <td>Various</td>
 		    <td>When your numbers start to go into the negative, or the positive..</td>
 		    <td>This metric can tell you whether your retention strategy is working or not.</td>
 		  </tr>
-		  <tr>
-		    <td>Calculate product strategy</td>
+		  <tr class="minion-row last-row">
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Calculate product strategy</td>
 		    <td>Optimization </td>
-		    <td>Optimization testingA/B testingCustomer segmentation</td>
-		    <td>LogsDatabase3rd party software</td>
+		    <td>
+		    	<ul>
+					<li>Optimization testing</li>
+					<li>A/B testing</li>
+					<li>Customer segmentation</li>
+		    	</ul>
+		    </td>
+		    <td>
+		    	<ul>
+					<li>Logs</li>
+					<li>Database</li>
+					<li>3rd party software</li>
+		    	</ul>
+		    </td>
 		    <td>New features, changes, as needed</td>
 		    <td>Different experiences are  delivered to segmented customers to gage success through custom KPIs.</td>
 		    <td>Multiple</td>
 		    <td>When there is significant usage differences that are tracked to UI changes.</td>
 		    <td>Helps you test the impact of your changes based on key performance metrics of your choice.</td>
 		  </tr>
-		  <tr>
+
+		  <!-- DECLINE STAGE -->
+
+		  <tr class="saffron-row">
 		    <td class="saffron" colspan="1" rowspan="2">DECLINE STAGE<br><i class="fa-solid fa-person-cane"></i></td>
-		    <td>Phasing out product</td>
+		    <td class="question"><i class="fa-solid fa-trophy"></i> Phasing out product</td>
 		    <td>Customer Decline </td>
-		    <td>User churn metricsUser behavior metrics</td>
+		    <td>
+		    	<ul>
+					<li>User churn metrics</li>
+					<li>User behavior metrics</li>
+		    	</ul>
+		    </td>
 		    <td>Various</td>
-		    <td>As neededMonthly</td>
+		    <td>
+		    	<ul>
+					<li>As needed</li>
+					<li>Monthly</li>
+		    	</ul>
+		    </td>
 		    <td>Data is typically visualized in the 3rd party tool itself </td>
 		    <td>Various</td>
 		    <td>When quantitative anlytics decline</td>
 		    <td>The product user base and revenue begin to decline as the product becomes obsolete or faces increased competition</td>
 		  </tr>
-		  <tr>
+		  <tr class="saffron-row">
 		    <td></td>
 		    <td>User Feedback</td>
-		    <td>Pain PointsBugs</td>
+		    <td>
+		    	<ul>
+					<li>Pain Points</li>
+					<li>Bugs</li>
+		    	</ul>
+		    </td>
 		    <td>Various</td>
 		    <td>As needed</td>
 		    <td>Data is typically visualized in the 3rd party tool itself</td>
@@ -483,8 +969,22 @@
 		    <td>Qualitative data, anecdotes, and scutomer insights are the voice of your customer and represent opportunities for improvement.</td>
 		  </tr>
 		</table>
+		</div>
+		<br>
+		<br>
+<hr>
 
-		<p>Copywright infoaand stuff to discuss.</p>
+<h2>❤️❤️❤️ Please take a moment and <a href="https://docs.google.com/forms/d/e/1FAIpQLSewT4D11VCT9YhxvWhwXG4ku9e-kJvoJkKyvCb0akTXiA-00w/viewform">tell us what you think</a> through the UX metrics evaluation survey! ❤️❤️❤️</h2>
+
+
+
+<hr>
+		<!-- Footer Information -->
+		<div class="wrap">
+			<div class="footerb">
+				<p><a class="cclogo" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><br><br>UX-Metrics.com</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Feel free to submit to the project on <a href="https://github.com/timbroadwater/uxmetrics" target="_blank">GitHub</a>.</p>
+			</div>
+		</div>
 
 	</body>
 </html>

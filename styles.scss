@@ -1,0 +1,243 @@
+/* Colors */
+@import 'colors';
+@import 'mqs';
+
+
+body {
+	margin: 1em;
+	padding: 0;
+	font-family: Helvitica, Roboto, Arial, sans-serif;
+	text-align: center;
+	// background-image: url("https://static.vecteezy.com/system/resources/previews/005/105/300/non_2x/group-of-cheerful-young-people-standing-together-waving-and-greeting-happy-team-concept-illustration-free-vector.jpg");
+	background-position: 0 0;
+}
+
+table {
+	width: 100%;
+	text-align: left;
+	max-width: 1920px;
+	margin: 0 auto;
+	display: block;
+	overflow-x: auto;
+	@include mq(tablet) {
+	}
+	@include mq(desktop) {
+		display: table;
+		overflow-x: none;
+	}
+	td, th {
+		padding: 1em;
+		border: 0;
+		vertical-align: top;
+		ul {
+			margin: 0;
+			padding-left: 15px;
+		}
+	}
+	thead  {
+		position: sticky;
+		top: 0; 
+	  	box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.4);
+		th {
+			background: white;
+			border: 1px solid #bbb;
+		}
+	}
+}
+ 
+.nowrap {
+	white-space: nowrap;
+}
+.people {
+	width: 100%;
+	padding: 1em;
+	max-width: 480px;
+	height: auto;
+}
+
+// Specific table Styles //
+
+.last-row {
+	td {
+		// border-bottom-color: #fff !important;
+		// border-bottom-width: 2px !important;
+	}
+}
+.question {
+	font-weight: bold;
+	.fa-regular, .fa-solid {
+		padding-bottom: 10px;
+		color: gold;
+		text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+		font-size: 1.5em;
+		display: block;
+	}
+}
+.thead1 {
+	background: #eee;
+}
+.thead2 {
+	background: #ddd;
+}
+.thead3 {
+	background: #eee;
+}
+
+h1 {
+	display: inline-block;
+	line-height: 150%;
+	font-size: 1.5em;
+	@include mq(tablet) {
+		font-size: 2.55em;
+	}
+	@include mq(desktop) {
+		font-size: 3em;
+	}
+}
+.bbwrap {
+	background: black;
+	padding: 0.25em 0.5em;
+	color: white;
+}
+
+/* Row Coloration */
+
+@mixin fawesome() {
+	font-size: 5em;
+	padding: 0.25em 0 0 0;
+	text-shadow: 5px 5px 10px rgb(70, 28, 117, 0.25);
+}
+
+.lavender {
+	background: $lavender !important;
+	color: lighten($lavender, 50%);
+	font-weight: 600;
+	.fa-regular, .fa-solid {
+		@include fawesome;
+	}
+}
+.lavender-row td {
+	background: lighten($lavender, 15%);
+	border: 1px solid $lavender;
+}
+.lavender-row:nth-child(odd) td {
+	background: lighten($lavender, 25%);
+}
+
+.blue {
+	background: $blue !important;
+	color: lighten($blue, 50%);
+	font-weight: 600;
+	.fa-regular, .fa-solid {
+		@include fawesome;
+	}
+}
+.blue-row td {
+	background: lighten($blue, 15%);
+	border: 1px solid $blue;
+}
+.blue-row:nth-child(odd) td {
+	background: lighten($blue, 25%);
+}
+
+.sinopia {
+	background: $sinopia !important;
+	color: lighten($sinopia, 50%);
+	font-weight: 600;
+	.fa-regular, .fa-solid {
+		@include fawesome;
+	}
+}
+.sinopia-row td {
+	background: lighten($sinopia, 15%);
+	border: 1px solid $sinopia;
+}
+.sinopia-row:nth-child(odd) td {
+	background: lighten($sinopia, 25%);
+}
+
+.sky {
+	background: $sky !important;
+	color: lighten($sky, 50%);
+	font-weight: 600;
+	.fa-regular, .fa-solid {
+		@include fawesome;
+	}
+}
+.sky-row td {
+	background: lighten($sky, 15%);
+	border: 1px solid $sky;
+}
+.sky-row:nth-child(odd) td {
+	background: lighten($sky, 25%);
+}
+
+.kiwi {
+	background: $kiwi !important;
+	color: lighten($kiwi, 50%);
+	font-weight: 600;
+	.fa-regular, .fa-solid {
+		@include fawesome;
+	}
+}
+.kiwi-row td {
+	background: lighten($kiwi, 15%);
+	border: 1px solid $kiwi;
+}
+.kiwi-row:nth-child(odd) td {
+	background: lighten($kiwi, 25%);
+}
+
+.minion {
+	background: $minion !important;
+	color: lighten($minion, 50%);
+	font-weight: 600;
+	.fa-regular, .fa-solid {
+		@include fawesome;
+	}
+}
+.minion-row td {
+	background: lighten($minion, 15%);
+	border: 1px solid $minion;
+}
+.minion-row:nth-child(odd) td {
+	background: lighten($minion, 25%);
+}
+
+.saffron {
+	background: $saffron !important;
+	color: lighten($saffron, 50%);
+	font-weight: 600;
+	.fa-regular, .fa-solid {
+		@include fawesome;
+	}
+}
+.saffron-row td {
+	background: lighten($saffron, 15%);
+	border: 1px solid $saffron;
+}
+.saffron-row:nth-child(odd) td {
+	background: lighten($saffron, 25%);
+}
+
+.lavender-text {
+	color: $lavender;
+}	
+.blue-text {
+	color: $blue;
+}	
+.sinopia-text {
+	color: $sinopia;
+}	
+.sky-text {
+	color: $sky;
+}	
+.kiwi-text {
+	color: $kiwi;
+}	
+.minion-text {
+	color: $minion;
+}	
+.saffron-text {
+	color: $saffron;
+}	

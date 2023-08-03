@@ -1,148 +1,269 @@
-/* ITCSS */
-
+/* Colors */
+/* 7 Color Palette from https://colorswall.com/palette/171311 */
 body {
-	margin: 1em;
-	padding: 0;
-	font-family: Helvitica, Roboto, Arial, sans-serif;
-	text-align: center;
-	background-image: url("https://static.vecteezy.com/system/resources/previews/005/105/300/non_2x/group-of-cheerful-young-people-standing-together-waving-and-greeting-happy-team-concept-illustration-free-vector.jpg");
-	background-position: 0 0;
+  margin: 1em;
+  padding: 0;
+  font-family: Helvitica, Roboto, Arial, sans-serif;
+  text-align: center;
+  background-position: 0 0;
 }
 
 table {
-	width: 100%;
-	text-align: left;
-	max-width: 1920px;
-	margin: 0 auto;
+  width: 100%;
+  text-align: left;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: block;
+  overflow-x: auto;
+}
+@media (min-width: 1024px) {
+  table {
+    display: table;
+    overflow-x: none;
+  }
+}
+table td, table th {
+  padding: 1em;
+  border: 0;
+  vertical-align: top;
+}
+table td ul, table th ul {
+  margin: 0;
+  padding-left: 15px;
+}
+table thead {
+  position: sticky;
+  top: 0;
+  box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.4);
+}
+table thead th {
+  background: white;
+  border: 1px solid #bbb;
 }
 
-td, th {
-	padding: 1em;
-	border: 1px solid #000;
-	vertical-align: top;
+.nowrap {
+  white-space: nowrap;
 }
 
-td {
-	background: rgb(255,255,255, 0.75);
+.people {
+  width: 100%;
+  padding: 1em;
+  max-width: 480px;
+  height: auto;
 }
 
-thead tr th {
-	background: white;
+.question {
+  font-weight: bold;
 }
-table thead  {
-	position: sticky;
-	top: 0; 
-  	box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.4);
+.question .fa-regular, .question .fa-solid {
+  padding-bottom: 10px;
+  color: gold;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+  display: block;
 }
 
-.fa-regular, .fa-solid {
+.thead1 {
+  background: #eee;
 }
 
-.kiwi {
-	background: #8bd346;
+.thead2 {
+  background: #ddd;
+}
+
+.thead3 {
+  background: #eee;
 }
 
 h1 {
-	display: inline-block;
+  display: inline-block;
+  line-height: 150%;
+  font-size: 1.5em;
 }
-.bbwrap {
-	background: black;
-	padding: 0.25em 0.5em;
-	color: white;
+@media (min-width: 400px) {
+  h1 {
+    font-size: 2.55em;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
 }
 
-/* 7 Color Palette from https://colorswall.com/palette/171311 */
+.bbwrap {
+  background: black;
+  padding: 0.25em 0.5em;
+  color: white;
+}
+
+/* Row Coloration */
 .lavender {
-	background: #9b5fe0 !important;
-	color: #461c75;
-	font-weight: 600;
+  background: #9b5fe0 !important;
+  color: white;
+  font-weight: 600;
 }
 .lavender .fa-regular, .lavender .fa-solid {
-	font-size: 5em;
-	padding: 0.25em 0 0 0;
-	color: #ceb1f0;
-	text-shadow: 5px 5px 10px rgb(70, 28, 117, 0.5);
+  font-size: 5em;
+  padding: 0.25em 0 0 0;
+  text-shadow: 5px 5px 10px rgba(70, 28, 117, 0.25);
 }
+
 .lavender-row td {
-	background: #ceb1f0;
+  background: #c39fec;
+  border: 1px solid #9b5fe0;
 }
+
 .lavender-row:nth-child(odd) td {
-	background: #ded1ed;
+  background: #decaf5;
 }
 
 .blue {
-	background: #16a4d8;
-	color: white;
-	font-weight: 600;
+  background: #16a4d8 !important;
+  color: #f0fafd;
+  font-weight: 600;
 }
 .blue .fa-regular, .blue .fa-solid {
-	font-size: 5em;
-	padding: 0.25em 0 0 0;
+  font-size: 5em;
+  padding: 0.25em 0 0 0;
+  text-shadow: 5px 5px 10px rgba(70, 28, 117, 0.25);
 }
-.sky {
-	background: #60dbe8;
-	color: white;
-	font-weight: 600;
+
+.blue-row td {
+  background: #4ec2ed;
+  border: 1px solid #16a4d8;
 }
-.sky .fa-regular, .sky .fa-solid {
-	font-size: 5em;
-	padding: 0.25em 0 0 0;
+
+.blue-row:nth-child(odd) td {
+  background: #7cd2f2;
 }
-.kiwi {
-	background: #8bd346;
-	color: white;
-	font-weight: 600;
-}
-.kiwi .fa-regular, .kiwi .fa-solid {
-	font-size: 5em;
-	padding: 0.25em 0 0 0;
-}
-.minion {
-	background: #efdf48;
-	color: white;
-	font-weight: 600;
-}
-.minion .fa-regular, .minion .fa-solid {
-	font-size: 5em;
-	padding: 0.25em 0 0 0;
-}
-.saffron {
-	background: #f9a52c;
-	color: white;
-	font-weight: 600;
-}
-.saffron .fa-regular, .saffron .fa-solid {
-	font-size: 5em;
-	padding: 0.25em 0 0 0;
-}
+
 .sinopia {
-	background: #d64e12;
-	color: white;
-	font-weight: 600;
+  background: #d64e12 !important;
+  color: #fdf0ea;
+  font-weight: 600;
 }
 .sinopia .fa-regular, .sinopia .fa-solid {
-	font-size: 5em;
-	padding: 0.25em 0 0 0;
+  font-size: 5em;
+  padding: 0.25em 0 0 0;
+  text-shadow: 5px 5px 10px rgba(70, 28, 117, 0.25);
+}
+
+.sinopia-row td {
+  background: #ef7945;
+  border: 1px solid #d64e12;
+}
+
+.sinopia-row:nth-child(odd) td {
+  background: #f39b74;
+}
+
+.sky {
+  background: #60dbe8 !important;
+  color: white;
+  font-weight: 600;
+}
+.sky .fa-regular, .sky .fa-solid {
+  font-size: 5em;
+  padding: 0.25em 0 0 0;
+  text-shadow: 5px 5px 10px rgba(70, 28, 117, 0.25);
+}
+
+.sky-row td {
+  background: #a3eaf2;
+  border: 1px solid #60dbe8;
+}
+
+.sky-row:nth-child(odd) td {
+  background: #cff4f8;
+}
+
+.kiwi {
+  background: #8bd346 !important;
+  color: white;
+  font-weight: 600;
+}
+.kiwi .fa-regular, .kiwi .fa-solid {
+  font-size: 5em;
+  padding: 0.25em 0 0 0;
+  text-shadow: 5px 5px 10px rgba(70, 28, 117, 0.25);
+}
+
+.kiwi-row td {
+  background: #b2e284;
+  border: 1px solid #8bd346;
+}
+
+.kiwi-row:nth-child(odd) td {
+  background: #ccebad;
+}
+
+.minion {
+  background: #efdf48 !important;
+  color: white;
+  font-weight: 600;
+}
+.minion .fa-regular, .minion .fa-solid {
+  font-size: 5em;
+  padding: 0.25em 0 0 0;
+  text-shadow: 5px 5px 10px rgba(70, 28, 117, 0.25);
+}
+
+.minion-row td {
+  background: #f5eb8e;
+  border: 1px solid #efdf48;
+}
+
+.minion-row:nth-child(odd) td {
+  background: #f9f4bd;
+}
+
+.saffron {
+  background: #f9a52c !important;
+  color: white;
+  font-weight: 600;
+}
+.saffron .fa-regular, .saffron .fa-solid {
+  font-size: 5em;
+  padding: 0.25em 0 0 0;
+  text-shadow: 5px 5px 10px rgba(70, 28, 117, 0.25);
+}
+
+.saffron-row td {
+  background: #fbc576;
+  border: 1px solid #f9a52c;
+}
+
+.saffron-row:nth-child(odd) td {
+  background: #fddaa8;
 }
 
 .lavender-text {
-	color: #9b5fe0;
+  color: #9b5fe0;
 }
+
 .blue-text {
-	color: #16a4d8;
+  color: #16a4d8;
 }
-.sky-text {
-	color: #60dbe8;
-}
-.kiwi-text {
-	color: #8bd346;
-}
-.minion-text {
-	color: #efdf48;
-}
-.saffron-text {
-	color: #f9a52c;
-}
+
 .sinopia-text {
-	color: #d64e12;
+  color: #d64e12;
 }
+
+.sky-text {
+  color: #60dbe8;
+}
+
+.kiwi-text {
+  color: #8bd346;
+}
+
+.minion-text {
+  color: #efdf48;
+}
+
+.saffron-text {
+  color: #f9a52c;
+}
+
+/*# sourceMappingURL=styles.css.map */
