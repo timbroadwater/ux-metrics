@@ -1,11 +1,11 @@
-/* Colors */
+/* Variables & Mixins */
 /* 7 Color Palette from https://colorswall.com/palette/171311 */
+/* General SCSS */
 body {
   margin: 1em;
   padding: 0;
   font-family: Helvitica, Roboto, Arial, sans-serif;
   text-align: center;
-  background-position: 0 0;
 }
 
 table {
@@ -16,7 +16,7 @@ table {
   display: block;
   overflow-x: auto;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1590px) {
   table {
     display: table;
     overflow-x: none;
@@ -47,9 +47,117 @@ table thead th {
 
 .people {
   width: 100%;
-  padding: 1em;
-  max-width: 480px;
+  max-width: 320px;
   height: auto;
+}
+
+/* CSS Trricks */
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+@media only screen and (max-width: 480px), (min-device-width: 488px) and (max-device-width: 760px) {
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin: 0 0 1rem 0;
+  }
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  /*
+  Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+  */
+  td:nth-of-type(1):before {
+    content: " ";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(2):before {
+    content: " ";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(3):before {
+    content: "Overall Framework / Mechanism";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(4):before {
+    content: "UX Metrics";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(5):before {
+    content: "Data source ";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(6):before {
+    content: "Frequency";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(7):before {
+    content: "Data analysis ";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(8):before {
+    content: "Tool";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(9):before {
+    content: "When to take action?";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  td:nth-of-type(10):before {
+    content: "Why it's important?";
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+}
+.custom td {
+  background: #4c7c1d !important;
+  color: white;
+}
+.custom td a {
+  color: white !important;
+}
+
+.redalert {
+  padding-top: 10px;
+  color: red;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  font-size: 1.5em;
+  display: block !important;
 }
 
 .question {
@@ -85,7 +193,7 @@ h1 {
     font-size: 2.55em;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1590px) {
   h1 {
     font-size: 3em;
   }
@@ -98,9 +206,14 @@ h1 {
 }
 
 /* Row Coloration */
+.fa-book-open {
+  color: #a3cafd;
+}
+
 .lavender {
   background: #9b5fe0 !important;
   color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 .lavender .fa-regular, .lavender .fa-solid {
@@ -120,7 +233,8 @@ h1 {
 
 .blue {
   background: #16a4d8 !important;
-  color: #f0fafd;
+  color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 .blue .fa-regular, .blue .fa-solid {
@@ -140,7 +254,8 @@ h1 {
 
 .sinopia {
   background: #d64e12 !important;
-  color: #fdf0ea;
+  color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 .sinopia .fa-regular, .sinopia .fa-solid {
@@ -161,6 +276,7 @@ h1 {
 .sky {
   background: #60dbe8 !important;
   color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 .sky .fa-regular, .sky .fa-solid {
@@ -181,6 +297,7 @@ h1 {
 .kiwi {
   background: #8bd346 !important;
   color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 .kiwi .fa-regular, .kiwi .fa-solid {
@@ -201,6 +318,7 @@ h1 {
 .minion {
   background: #efdf48 !important;
   color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 .minion .fa-regular, .minion .fa-solid {
@@ -221,6 +339,7 @@ h1 {
 .saffron {
   background: #f9a52c !important;
   color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
   font-weight: 600;
 }
 .saffron .fa-regular, .saffron .fa-solid {
