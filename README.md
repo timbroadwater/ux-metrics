@@ -13,6 +13,11 @@ The current UX Metrics Playbook is built with:
 ## Joining in the fun! ❤️ ❤️ ❤️
 The UX Metrics Playbook is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), and we would love it if a community of product managers, UX researchers, developers, and designers would help it grow and scale into something that is free and useful for everyone.
 
-## Current Contributors
+### Current Contributors
 - Carol Li, carollibright@gmail.com 
 - Tim Broadwater, timbrdh2o@gmail.com
+
+### Some Future Ideas
+- Adding refrences and links for tools and research
+- Research on how UX-Metrics could be more useful
+- Implementing a design system like CLoudscape, Material, or Bootstrap
