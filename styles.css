@@ -6,6 +6,7 @@ body {
   padding: 0;
   font-family: Helvitica, Roboto, Arial, sans-serif;
   text-align: center;
+  background: url("spiral.jpeg");
 }
 
 table {
@@ -49,6 +50,10 @@ table thead th {
   width: 100%;
   max-width: 320px;
   height: auto;
+}
+
+.whitebg {
+  background: white;
 }
 
 /* CSS Trricks */
@@ -154,8 +159,9 @@ table thead th {
 
 .redalert {
   padding-top: 10px;
-  color: red;
-  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  padding-top: 10px;
+  color: gold;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   font-size: 1.5em;
   display: block !important;
 }

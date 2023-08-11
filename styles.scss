@@ -11,6 +11,7 @@ body {
 	padding: 0;
 	font-family: Helvitica, Roboto, Arial, sans-serif;
 	text-align: center;
+	background: url('spiral.jpeg');
 }
 
 table {
@@ -54,6 +55,9 @@ table {
 	height: auto;
 }
 
+.whitebg {
+	background: white;
+}
 
 /* CSS Trricks */
 
@@ -135,10 +139,11 @@ table {
 
 .redalert {
 	padding-top: 10px;
-    color: red;
-    text-shadow: 0px 0px 5px rgb(255, 255, 255, 1);
-    font-size: 1.5em;
-    display: block !important;
+    padding-top: 10px;
+		color: gold;
+		text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+		font-size: 1.5em;
+		display: block !important;
 }
 .last-row {
 	td {
